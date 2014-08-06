@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 	
-	<title>{{ page.title }} &ndash; Neofyt.com</title>
+	<title></title>
 	
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300"/>	
 	<link rel="stylesheet" href="/css/layout.css">
@@ -13,41 +13,15 @@
 </head>
 <body>
 		
-	<!--<section>
-
-	    <aside>
-			<h1>Neofyt.com&hellip;</h1>
-
-			<img src="/img/avatar.jpg" alt="Avatar"/>
-
-			<p>Just a little site for my experiments in web<br /> design and development&hellip;</p>
-	    </aside>
+    <ul>
+		{% for member in site.data.books %}
+		  <li>
+		    <a href="#">
+		      {{ books.name }}
+		    </a>
+		  </li>
+		{% endfor %}
+	</ul>
 		    
-	    <article>
-	    	{% if page.home %} <h1>&hellip; a little bit of everything&hellip;</h1> {% endif %}
-
-	        {{ content }}
-
-	        <footer>
-	        	<p>Neofyt &copy; {{ site.time | date: '%Y' }} &dash; Built with <a href="https://github.com/mojombo/jekyll">Jekyll</a> and hosted on <a href="https://github.com/Neofyt/neofyt.github.com">Github</a>&hellip;</p>
-	        </footer>
-	    </article>
-
-	    </section>-->
-
-	    <ul>
-			{% for member in site.data.members %}
-			  <li>
-			    <a href="https://github.com/{{ member.github }}">
-			      {{ member.name }}
-			    </a>
-			  </li>
-			{% endfor %}
-		</ul>
-		    
-	
-	
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
-	
 </body>
 </html>
