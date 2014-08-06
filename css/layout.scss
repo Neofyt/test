@@ -4,8 +4,9 @@
 ---
 
 @import "typography";
+@import "var";
 
-.content {
-	width: 80%;
-	margin: 0 auto;
+body {
+	font: 12px $font-stack;
+	background-color: $background-color;
 }
