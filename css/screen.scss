@@ -5,6 +5,13 @@
 @import "var";
 @import "typo";
 
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
 
 body {
 	font: $font-size-base $font-stack;
@@ -12,8 +19,12 @@ body {
 	color: $color;
 }
 
-li {
+ul, li {
 	height: 100%;
+	display: block;
+}
+
+li {
 	overflow-y: scroll;
 	border-bottom: solid 1px currentColor;
 }
