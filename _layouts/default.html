@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-	
-	<title></title>
-	
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300"/>	
-	<link rel="stylesheet" href="./css/screen.css">
-	
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 		
-    <ul>
-		{% for books in site.data.books %}
-		  <li>
-		    <a href="#">
-		      {{ books.name }}
-		    </a>
-		  </li>
-		{% endfor %}
-	</ul>
-		    
-</body>
+		<title></title>
+		
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300"/>	
+		<link rel="stylesheet" href="./css/screen.css">
+		
+		<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+	</head>
+	<body>
+
+		<ul>
+			{% for books in site.data.books %}
+				<li>
+					{{ books.name }}
+					<p>{{ books.resume }}</p>
+				</li>
+			{% endfor %}
+		</ul>
+			    
+	</body>
 </html>

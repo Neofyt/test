@@ -1,12 +1,13 @@
 ---
-# this ensures Jekyll reads the file to be transformed into CSS later
-# only Main files contain this front matter, not partials.
+# Global scss file
 ---
 
-@import "typo";
 @import "var";
+@import "typo";
+
 
 body {
-	font: 12px $font-stack;
+	font: $font-size-base $font-stack;
 	background-color: $background-color;
+	color: $color;
 }
