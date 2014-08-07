@@ -1,5 +1,5 @@
 - name: Premiere Fondation
-  resume: lorem ipsum
+  resume: lorem ipsum <a href="#">test</a>
 
 - name: Seconde Fondation
   resume: lorem ipsum
