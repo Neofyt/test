@@ -10,7 +10,6 @@ last_update: 20140807
 		
 		<title></title>
 		
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300"/>	
 		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Orbitron:400,900' />
 		<link rel="stylesheet" href="./css/screen.css">
 		
@@ -21,7 +20,7 @@ last_update: 20140807
 		<ul>
 			{% for books in site.data.books %}
 				<li>
-					<h1>{{ books.name }}</h1>
+					<h1>{{ books.name }} <span>- {{ books.date }}</span></h1>
 					<p>{{ books.resume }}</p>
 				</li>
 			{% endfor %}
@@ -30,4 +29,4 @@ last_update: 20140807
 	</body>
 </html>
 
-{{ page.last_update }}
+<!--{{ page.last_update }}-->
