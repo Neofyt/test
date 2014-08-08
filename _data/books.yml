@@ -1,8 +1,19 @@
-- name: Premiere Fondation
+- name: Fondation
   resume: lorem ipsum <br /><q>test</q>
+  date: 1951
+
+- name: Fondation et Empire
+  resume: lorem ipsum
+  date: 1952
 
 - name: Seconde Fondation
   resume: lorem ipsum
+  date: 1953
+
+- name: Fondation foudroyée
+  resume: lorem ipsum
+  date: 1982
 
 - name: Terre et Fondation
   resume: lorem ipsum
+  date: 1986
