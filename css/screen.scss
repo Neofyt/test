@@ -16,6 +16,7 @@
 
 body {
 	font: $font-size-base $font-stack;
+	line-height: $font-size-base * 2;
 	background-color: $background-color;
 	color: $color;
 }
