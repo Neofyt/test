@@ -1,40 +1,71 @@
----
-last_update: 20140807
----
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-		
-		<title></title>
-		
-		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Orbitron:400,900' />
-		<link rel="stylesheet" href="./css/screen.css">
-		
-		<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-	</head>
-	<body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0">
+	<meta name="Description" content="Boardgames">
+	<meta name="theme-color" content="#fafafa" />
 
-		<ul>
-			{% for books in site.data.books %}
-				<li>
-					<h1>{{ books.name }} <span>- {{ books.date }}</span></h1>
-					<p>{{ books.resume }}</p>
-				</li>
-			{% endfor %}
-		</ul>
+	<title>{{ page.title }} &ndash; cesoirjejoue.com</title>
 
-		<ul>
-	{% for post in paginator.posts %}
-		<li>
-			<h2><a href="{{ post.url }}">{{ post.title }}</a><span>{{ post.date | date: "%d %B, %Y" }}</span></h2>
-		</li>
-	{% endfor %}
-</ul>
-			    
-	</body>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+
+	<section>
+
+	    <aside>
+			<h1>cesoirjejoue</h1>
+
+			<p>Amateur de jeux de société et fan de développement web, voici mon petit blog tout humble pour partager mes avis ou coups de c&oelig;ur sur certains jeux, classiques ou moins classiques...</p>
+
+			<p>
+				<img src="img/microbadges/C.gif" title="Carcassonne fan"/>
+				<img src="img/microbadges/bruno.png" title="Bruno Cathala fan"/>
+				<img src="img/microbadges/rw.png" title="Roll & Write fan"/>
+				<img src="img/microbadges/pandemic.png" title="Pandemic: The Cure fan"/>
+				<img src="img/microbadges/green.png" title="I play with green! - Green Meeple"/>
+			</p>
+			<br />	<br />
+
+			<a href= "#">Profil Instagram<b></b></a>
+
+	    </aside>
+
+	    <article>
+	    	<!--{% if page.home %}-->
+
+					<li>
+							<h2><a href="/2012/12/second-article">Second article</a><span>25 December, 2012</span></h2>
+
+								<img class="gif-still" src="img/posts/2013-02-20-login-form_initial-state.jpg">
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								 <kbd>Dice</kbd><kbd>Roll&Write</kbd>
+						</li>
+
+						    <li>
+							<h2><a href="/2012/12/second-article">Second article</a><span>25 December, 2012</span></h2>
+						</li>
+
+				<!--{% endif %}-->
+
+	       <!-- {{ content }}-->
+
+	        <!--<footer>
+	        	<p>cesoirjejoue &copy; {{ site.time | date: '%Y' }} &dash; Built with <a href="https://github.com/mojombo/jekyll">Jekyll</a> and hosted on Github&hellip;</p>
+	        </footer>-->
+
+	    </article>
+
+
+
+	</section>
+
+</body>
 </html>
-
-<!--{{ page.last_update }}-->

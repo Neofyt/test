@@ -4,11 +4,13 @@ date: 2012-12-25
 layout: post
 slug: second-article
 title: Second article
+category: game
+tags: [dice, roll&write]
 ---
 
 ## This is a test of Jekyll on Github
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu felis a metus vehicula convallis vitae a nisi. Etiam fringilla, odio sed dictum sodales, orci nisl venenatis elit, vel lacinia massa sem eu nisi. Aenean sit amet lacus lorem. Integer at erat risus. Morbi placerat mi et turpis hendrerit suscipit. Pellentesque venenatis sollicitudin ullamcorper. Nunc interdum, ipsum blandit tincidunt tempus, sapien sem interdum erat, ac convallis neque dolor sed libero. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu felis a metus vehicula convallis vitae a nisi. Etiam fringilla, odio sed dictum sodales, orci nisl venenatis elit, vel lacinia massa sem eu nisi. Aenean sit amet lacus lorem. Integer at erat risus. Morbi placerat mi et turpis hendrerit suscipit. Pellentesque venenatis sollicitudin ullamcorper. Nunc interdum, ipsum blandit tincidunt tempus, sapien sem interdum erat, ac convallis neque dolor sed libero.
 
 ![Image alt text](http://api.neofyt.com/img/?400.200.558ed5.ffffff "Optional title")
 
